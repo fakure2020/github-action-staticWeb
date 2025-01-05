@@ -16,6 +16,6 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: Deploy static website from s3 bucket  
-        run: aws s3 sync ./ s3://gitlab-actions3-my01 --delete
+        run: aws s3 sync . s3://gitlab-actions3-my01 --delete
         
      
